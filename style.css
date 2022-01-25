@@ -1,0 +1,697 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 6px;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    font-family: Montserrat;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+section {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    text-align: center;
+}
+
+.btn-large {
+    padding: 2.4rem 2rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 2rem;
+
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-size: 2rem;
+    transition: all .5sn ease;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #234567;
+
+}
+
+.btn-primary {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 2.4rem 2rem;
+    background-color: #19bd9e;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-size: 2rem;
+    transition: all .5sn ease;
+
+}
+
+.btn-primary:hover {
+    background-color: #2C3E50;
+    color: #fff;
+    border: 1px solid #2C3E50;
+}
+
+.btn-outline:hover {
+    background-color: #2C3E50;
+    color: #fff;
+    border: 1px solid #2C3E50;
+}
+
+.btn-social {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/*.clearfix{
+    overflow: auto;
+}*/
+
+
+.col {
+    float: left;
+    width: 100%;
+    padding: 1rem;
+
+
+}
+
+.col-footer {
+    float: left;
+    width: 100%;
+    padding: 1rem;
+
+
+}
+
+
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+@media (max-width: 576px) {
+    footer #loc {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        background-color: #2c3c40;
+        color: #fff;
+        text-align: center;
+    }
+
+    footer #abt-web {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        background-color: #2c3d30;
+        color: #fff;
+        text-align: center;
+    }
+
+    footer #abt-course {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        background-color: #2c3f60;
+        color: #fff;
+        text-align: center;
+    }
+}
+
+@media (min-width: 576px) {
+
+    .container {
+        max-width: 540px;
+    }
+
+    html {
+        font-size: 7px;
+    }
+
+
+    .col {
+        float: left;
+        width: 50%;
+        padding: 1rem;
+
+
+    }
+
+
+
+}
+
+@media (min-width: 768px) {
+
+    .container {
+        max-width: 740px;
+    }
+
+    html {
+        font-size: 8px;
+    }
+
+
+    .col {
+        float: left;
+        width: 33.3333%;
+        padding: 1rem;
+
+
+    }
+
+    .col-footer {
+        float: left;
+        width: 50%;
+        padding: 1rem;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    .container {
+        max-width: 960px;
+    }
+
+    html {
+        font-size: 9px;
+    }
+
+
+    .col {
+        float: left;
+        width: 25%;
+        padding: 1rem;
+    }
+
+    .col-footer {
+        float: left;
+        width: 33.3333%;
+        padding: 1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .container {
+        max-width: 1140px;
+    }
+
+    html {
+        font-size: 10px;
+    }
+
+
+.col {
+    float: left;
+    width: 14.2857%;
+    padding: 1rem;
+
+
+}
+
+.col-footer {
+    float: left;
+    width: 33.3333%;
+    padding: 1rem;
+    }
+
+}
+
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+
+/*navbar*/
+
+nav {
+    width: 100%;
+    font-family: Montserrat;
+    background-color: #2C3E50;
+    color: #fff;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    position: fixed;
+    z-index: 500;
+
+}
+
+#logo-box {
+    float: left;
+    padding-top: .5rem;
+}
+
+#logo-box .logo {
+    color: #fff;
+    font-size: 3.2rem;
+    font-weight: 700;
+    transition: color .3s;
+}
+
+#logo-box .logo:hover {
+    color: #854BF6;
+}
+
+#nav-links {
+    float: right;
+}
+
+#nav-links .nav-item {
+    float: left;
+    margin: .4rem;
+}
+
+#nav-links .nav-link {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    display: block;
+    padding: 1.6rem;
+    letter-spacing: .1rem;
+    transition: color .3s;
+}
+
+#nav-links .nav-link:hover {
+    color: #19bd9e;
+}
+
+/*nav-bars*/
+
+#nav-links .nav-icon{
+    display: none;
+}
+
+
+
+@media (max-width: 992px){
+
+    #logo-box{
+        float: none ;
+        text-align: left;
+    }
+
+    #nav-links{
+        float: none;
+    }
+
+    #nav-links.responsive li:not(:first-child){
+        display: none;
+    }
+
+    #nav-links .nav-link{
+        font-size: 2rem;
+        padding: 0px;
+        margin-top: 1.3rem;
+    }
+
+    #nav-links .nav-item{
+        float: none;
+        text-align: left;
+        
+    }
+
+    #nav-links .nav-icon{
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 8px;
+        font-size: 3.5rem;
+    }
+}
+
+/*header*/
+
+header {
+    background-color: #19bd9e;
+
+    padding-top: calc(104px + 10rem);
+    padding-bottom: 104px;
+    text-align: center;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 6.2rem;
+
+}
+
+header h2 {
+    color: #fff;
+    font-size: 2.8rem;
+    font-family: 'Lato';
+    font-weight: 300;
+}
+
+hr.star-light {
+
+    border-color: #ffffff;
+
+}
+
+hr.star-dark {
+
+    border-color: #2c3e50;
+
+}
+
+.star-light,
+.star-dark {
+    border: none;
+    border-top: .4rem solid;
+    max-width: 26rem;
+    margin: 3rem auto;
+    padding: 5px;
+    overflow: visible;
+    height: 0;
+
+}
+
+.star-light::after {
+
+    content: "\f005";
+    font-family: "Font Awesome 5 Free";
+    color: #fff;
+    font-weight: 900;
+    font-size: 3rem;
+    position: relative;
+    top: -3rem;
+    padding: 0 0.25rem;
+    background-color: #19bd9e;
+}
+
+.star-dark::after {
+
+    content: "\f005";
+    font-family: "Font Awesome 5 Free";
+    color: #2c3e50;
+    font-weight: 900;
+    font-size: 3rem;
+    position: relative;
+    top: -3rem;
+    padding: 0 0.25rem;
+    background-color: #fff;
+}
+
+  #subNav{
+        
+        list-style-type: none;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+      }
+
+      .subLink{
+        display: inline-block;
+        padding: 1rem;
+       
+        background-color: #19af9e;
+        box-shadow: -2px -2px 4px #29ce9d ;
+       
+      }
+
+     .d-i-block{
+      display: block; 
+     
+
+     }
+
+     #subNav a{
+        color: #fff;
+        font-size: 2.8rem;
+        font-family: 'Lato';
+        font-weight: 300;
+     }
+
+      .subLink:hover {
+        background-color: #2C3E50;
+        box-shadow: -1px -2px 4px #2C3E50 ;
+      }
+
+
+    .subNav2{
+        display: flex;
+        list-style-type: none;
+        width: 94%;
+        margin: auto;
+        margin-top: 40px;
+        justify-content: space-around;
+        background-color: #19af9e;
+        box-shadow: -2px -2px 4px #29ce9d ;
+    } 
+
+    .subNav2 li:hover {
+        background-color: #2C3E50;
+        box-shadow: -1px -1px 2px #2C3E50 ;
+    } 
+
+
+    .subNav2 a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 2.8rem;
+        font-family: 'Lato';
+        font-weight: 300;
+        padding: 1.5rem;
+        
+
+    } 
+      
+
+      @media (max-width: 768px){
+        .subLink, .subNav2{
+            display: block;
+            width: 35rem;
+            text-align: center;
+            margin: auto;
+        }
+
+        .subNav2{
+            flex-direction: column;
+            justify-content: space-around;
+        }
+      }
+
+#my-courses {
+
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    text-align: center;
+}
+
+#my-courses h2 {
+    color: #2c3e50;
+    font-size: 4.2rem;
+}
+
+
+
+
+.my-courses-item {
+
+    position: relative;
+
+}
+
+.my-courses-item img {
+    display: block;
+
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #53BD9F;
+    opacity: 0;
+    transition: opacity .5s ease;
+
+}
+
+.img-overlay .icon {
+    color: #fff;
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.my-courses-item:hover .img-overlay {
+    opacity: 0.8;
+}
+
+
+/*About*/
+
+#about {
+    background-color: #53BD9F;
+    color: #fff;
+}
+
+#about h2 {
+    font-size: 4.8rem;
+}
+
+#about-text {
+    text-align: left;
+}
+
+#about-text .text {
+    font-size: 2rem;
+}
+
+#about-text .left {
+    float: none;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+
+
+}
+
+#about-text .right {
+    float: none;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@media (min-width: 992px) {
+
+    #about-text .left {
+        float: left;
+        width: 50%;
+        padding-right: 1rem;
+        padding-left: 25rem;
+
+
+    }
+
+    #about-text .right {
+        float: right;
+        width: 50%;
+        padding-left: 1rem;
+        padding-right: 25rem;
+    }
+
+}
+
+/* Contact */
+
+#contact h2 {
+    font-size: 4.8rem;
+    color: #2c3e50;
+}
+
+#contact {
+    width: 70%;
+    margin: 0 auto;
+
+}
+
+#contact-form {
+    text-align: left;
+}
+
+.form-group {
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 1rem;
+    margin-bottom: 4rem;
+    /* text-align: left;*/
+}
+
+.form-group input,
+.form-group textarea {
+    border: none;
+    width: 100%;
+    display: block;
+    font-size: 2.3rem;
+    padding-bottom: 2rem;
+}
+
+.form-group input,
+textarea {
+    outline: 0;
+}
+
+footer {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+}
+
+footer h4 {
+    font-size: 2.4rem;
+}
+
+footer p {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+footer li {
+    display: inline-block;
+
+}
+
+.copyright {
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+    background-color: #2a2E40;
+    color: #fff;
+    text-align: center;
+}
