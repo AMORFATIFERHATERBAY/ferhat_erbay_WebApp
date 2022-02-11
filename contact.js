@@ -9,7 +9,7 @@ class UI {
          <td>${contact.email}</td>
          <td>${contact.phone}</td>
          <td>${contact.message}</td>
-         <td><a href="#" id="delete-btn" data-id="${contact.contactId}" class="btn alert-danger btn-sm delete ">Delete</a></td>
+         <td><a href="#" id="delete-btn" data-id="${contact.contactId}" class="btn-dlt  delete "><span></span><span></span><span></span><span></span>Delete</a></td>
     
       </tr>   
       `;
