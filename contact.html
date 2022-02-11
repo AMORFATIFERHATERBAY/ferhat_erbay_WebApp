@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:ital,wght@0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/d0ffe7777b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <div>
+      <nav style="margin-top: 0px">
+        <div class="container clearfix">
+          <div id="logo-box">
+            <a href="index.html" class="logo text-uppercase"> Home </a>
+          </div>
+          <div id="nav-links" class="responsive">
+            <ul>
+              <li class="nav-item">
+                <a href="#" class="nav-link text-uppercase nav-icon"
+                  ><i class="fas fa-bars"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a href="#my-courses" class="nav-link text-uppercase"
+                  >My Courses</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link text-uppercase">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container clearfix alert-message">
+      <div>
+        <table class="table table-bordered table-hover table-striped">
+          <thead>
+            <tr>
+              <th>Contact Id</th>
+              <th>Full Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Message</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="contact-list"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="contact.js"></script>
+    <script>
+      $(".nav-icon").click(function () {
+        $("#nav-links").toggleClass("responsive");
+        return false;
+      });
+    </script>
+  </body>
+</html>

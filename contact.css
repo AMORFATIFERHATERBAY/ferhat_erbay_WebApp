@@ -34,12 +34,6 @@ ul {
   list-style-type: none;
 }
 
-section {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-  text-align: center;
-}
-
 .btn-large {
   padding: 2.4rem 2rem;
 }
@@ -101,7 +95,6 @@ section {
   padding: 5px 20px;
 }
 
-/* Alert */
 .alert-success {
   background-color: #3b8855;
   color: #ffffff;
@@ -130,8 +123,8 @@ section {
 }
 
 /*.clearfix{
-    overflow: auto;
-}*/
+        overflow: auto;
+    }*/
 
 .col {
   float: left;
@@ -274,7 +267,7 @@ nav {
   color: #fff;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  position: fixed;
+
   z-index: 500;
 }
 
@@ -355,32 +348,6 @@ nav {
     right: 8px;
     font-size: 3.5rem;
   }
-}
-
-/*header*/
-
-header {
-  background-color: #19bd9e;
-
-  padding-top: calc(104px + 10rem);
-  padding-bottom: 104px;
-  text-align: center;
-}
-
-header h1 {
-  color: #fff;
-  font-size: 6.2rem;
-}
-
-header h2 {
-  color: #fff;
-  font-size: 2.8rem;
-  font-family: "Lato";
-  font-weight: 300;
-}
-
-hr.star-light {
-  border-color: #ffffff;
 }
 
 hr.star-dark {
@@ -493,82 +460,6 @@ hr.star-dark {
   }
 }
 
-#my-courses {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-  text-align: center;
-}
-
-#my-courses h2 {
-  color: #2c3e50;
-  font-size: 4.2rem;
-}
-
-.my-courses-item {
-  position: relative;
-}
-
-.my-courses-item img {
-  display: block;
-}
-
-.img-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #53bd9f;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-.img-overlay .icon {
-  color: #fff;
-  font-size: 2rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.my-courses-item:hover .img-overlay {
-  opacity: 0.8;
-}
-
-/*About*/
-
-#about {
-  background-color: #53bd9f;
-  color: #fff;
-}
-
-#about h2 {
-  font-size: 4.8rem;
-}
-
-#about-text {
-  text-align: left;
-}
-
-#about-text .text {
-  font-size: 2rem;
-}
-
-#about-text .left {
-  float: none;
-  width: 100%;
-  padding-right: 1rem;
-  padding-left: 1rem;
-}
-
-#about-text .right {
-  float: none;
-  width: 100%;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 @media (min-width: 992px) {
   #about-text .left {
     float: left;
@@ -587,41 +478,32 @@ hr.star-dark {
 
 /* Contact */
 
-#contact h2 {
-  font-size: 4.8rem;
-  color: #2c3e50;
+.table {
+  position: absolute;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  margin-top: 6rem;
+  color: #212529;
+  vertical-align: top;
+}
+table {
+  caption-side: bottom;
+  border-collapse: collapse;
+}
+table,
+td,
+tr,
+th {
+  padding: 1.2rem;
+  border-bottom: 1px solid #dddddd;
+}
+tr:hover {
+  background-color: #d6eeee;
 }
 
-#contact {
-  width: 70%;
-  margin: 0 auto;
-}
-
-#contact-form {
-  text-align: left;
-}
-
-.form-group {
-  border-bottom: 1px solid #e9ecef;
-  padding-bottom: 1rem;
-  margin-bottom: 4rem;
-  /* text-align: left;*/
-}
-
-.form-group input,
-.form-group textarea {
-  border: none;
-  width: 100%;
-  display: block;
-  font-size: 2.3rem;
-  padding-bottom: 2rem;
-}
-
-.form-group input,
-textarea {
-  outline: 0;
-}
-
+/* Footer */
 footer {
   padding-top: 6rem;
   padding-bottom: 6rem;
