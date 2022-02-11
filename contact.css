@@ -551,14 +551,14 @@ footer li {
 .btn-dlt {
   position: relative;
   display: inline-block;
-  padding: 10px 20px;
+  padding: 1rem 2rem;
   color: #dc3545;
-  font-size: 16px;
+  font-size: 1.5rem;
   text-decoration: none;
   text-transform: uppercase;
   overflow: hidden;
   transition: 0.5s;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
 }
 
 .btn-dlt:hover {
